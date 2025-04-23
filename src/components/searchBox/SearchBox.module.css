@@ -1,0 +1,11 @@
+.wrapper {
+  margin: 15px auto 30px;
+  text-align: center;
+}
+.text {
+  margin: 0;
+}
+.searchInput {
+  padding: 5px 10px;
+  width: 300px;
+}

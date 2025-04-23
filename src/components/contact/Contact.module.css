@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.image {
+  display: block;
+  width: 40px;
+  border-radius: 30%;
+}
+.description {
+  text-align: left;
+}
+.text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.button {
+  padding: 5px 15px;
+  color: #000000;
+  background-color: #ff4a4a;
+}
