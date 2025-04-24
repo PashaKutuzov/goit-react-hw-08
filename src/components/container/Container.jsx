@@ -4,7 +4,7 @@ import {
   selectContactsError,
   selectContactsLoading,
 } from "../../redux/contacts/selectors";
-import Header from "../header/Header";
+import AppBar from "../AppBar/AppBar";
 
 import styles from "./Container.module.css";
 import Loader from "../loader/Loader";
@@ -17,7 +17,7 @@ export default function Container({ children }) {
 
   return (
     <div className={styles.container}>
-      <Header />
+      <AppBar />
       {authLoading ?? contactsLoading ? (
         <Loader />
       ) : authError ?? contactsError ? (

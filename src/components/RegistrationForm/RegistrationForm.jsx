@@ -2,7 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string } from "yup";
 import { useDispatch } from "react-redux";
 
-import styles from "./RegisterForm.module.css";
+import styles from "./RegistrationForm.module.css";
 import { fetchRegisterUser } from "../../redux/auth/operations";
 
 const userShema = object().shape({
@@ -13,10 +13,10 @@ const userShema = object().shape({
   email: string().email("Invalid value").required("Required field"),
   password: string()
     .min(7, "The password must contain at least 3 characters")
-    .required("Required field")
+    .required("Required field"),
 });
 
-export default function RegisterForm() {
+export default function RegistrationForm() {
   const dispatch = useDispatch();
 
   const handleSubmit = (data, action) => {
